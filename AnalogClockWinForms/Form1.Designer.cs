@@ -30,6 +30,7 @@
         {
             this.StartPauseButton = new System.Windows.Forms.Button();
             this.ResetButton = new System.Windows.Forms.Button();
+            this.SecondsLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // StartPauseButton
@@ -52,17 +53,27 @@
             this.ResetButton.UseVisualStyleBackColor = true;
             this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
             // 
+            // SecondsLabel
+            // 
+            this.SecondsLabel.AutoSize = true;
+            this.SecondsLabel.Location = new System.Drawing.Point(13, 249);
+            this.SecondsLabel.Name = "SecondsLabel";
+            this.SecondsLabel.Size = new System.Drawing.Size(0, 13);
+            this.SecondsLabel.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.SecondsLabel);
             this.Controls.Add(this.ResetButton);
             this.Controls.Add(this.StartPauseButton);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -70,6 +81,7 @@
 
         private System.Windows.Forms.Button StartPauseButton;
         private System.Windows.Forms.Button ResetButton;
+        private System.Windows.Forms.Label SecondsLabel;
     }
 }
 
